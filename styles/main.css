@@ -144,3 +144,15 @@
     background-color: transparent;
     transition: color background-color 0.5s;
 }
+
+.group-logo-description:hover .group-text-wrapper{
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    background-color: grey;
+}
+
+.group-image-blur {
+    transition: 1s;
+    filter: brightness(10%);
+}
