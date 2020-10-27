@@ -1,0 +1,83 @@
+/*variables*/
+:root{
+    --border-color: white;
+    --nav-bar-border-radius: 15px;
+    --container-border-radius: 25px;
+    --navbar-fill: white;
+  }
+  
+  body{
+    /*credits: https://projects.verou.me/css3patterns/#carbon */
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+  }
+  
+  header{
+    position: fixed;
+    top:20px;
+    right:8px;
+    left:8px;
+    z-index: 1;
+  }
+  
+  .content-index{
+    margin-top: 120px;
+  }
+    
+  /* navigation bar styles*/
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--navbar-fill);
+    padding: 15px;
+    border-radius: var(--nav-bar-border-radius);
+    border-style: solid;
+    border-color: var(--border-color);
+    border-width: 5px;
+  }
+  
+  .navbar-left{
+    display: flex;
+  }
+  
+  .nav-link-wrapper{
+    height: 22px;
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+  }
+  
+  .nav-link-wrapper a{
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+  }
+  
+  .nav-link-wrapper:hover{
+    border-bottom: 1px solid black;
+  }
+  
+  .nav-link-wrapper a:hover{
+    color: black;
+  }
+  
+  .nav-link-active{
+    border-bottom: solid black !important;
+  }
+  .nav-link-active a{
+    color: black !important;
+  }
+  
+  .navbar-right .my-name{
+    text-transform: uppercase;
+    color: #8a8a8a;
+  }
