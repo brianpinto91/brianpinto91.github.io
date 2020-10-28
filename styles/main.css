@@ -4,6 +4,7 @@
     --nav-bar-border-radius: 15px;
     --container-border-radius: 25px;
     --navbar-fill: white;
+    --navbar-inactive-color: #4a4a4a;
   }
   
   body{
@@ -44,16 +45,16 @@
   }
   
   .nav-link-wrapper{
-    height: 22px;
+    height: 25px;
     margin-right: 20px;
-    font-size: 0.9em;
+    font-size: 16px;
     text-transform: uppercase;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
   }
   
   .nav-link-wrapper a{
-    color: #8a8a8a;
+    color: var(--navbar-inactive-color);
     text-decoration: none;
     transition: color 0.5s;
   }
@@ -69,13 +70,37 @@
   .nav-link-active{
     border-bottom: solid black !important;
   }
+
   .nav-link-active a{
     color: black !important;
+    font-weight: bold !important;
   }
   
   .navbar-right .my-name{
     text-transform: uppercase;
-    color: #8a8a8a;
+    color: var(--navbar-inactive-color);
+    font-size: 18px;
+  }
+
+  /* Smartphones (portrait and landscape) ----------- */
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 480px) {
+    .nav-link-wrapper{
+      height: 25px;
+      margin-right: 20px;
+      font-size: 20px;
+      text-transform: uppercase;
+      border-bottom: 1px solid transparent;
+      transition: border-bottom 0.5s;
+    }
+
+    .navbar-right .my-name{
+      text-transform: uppercase;
+      color: var(--navbar-inactive-color);
+      font-size: 20px;
+    }
+
   }
 
   /*body styles*/
