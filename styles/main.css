@@ -206,3 +206,15 @@
   padding: 10px 10px 10px 10px;
   font-size: 20px;
 }
+
+.footer-wrapper{
+  border-style: solid;
+  border-radius: var(--nav-bar-border-radius);
+  border-color: var(--border-color);
+  background-color: var(--navbar-fill);
+}
+
+.copyright-wrapper{
+  color: black;
+  text-align: center;
+}
