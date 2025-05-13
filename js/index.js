@@ -75,22 +75,14 @@ function populateProjects(items, id) {
       blogDescription.innerHTML = items[i].content;
       blogDescription.style = "margin: 0 0 12px; font-size: 12px; color: #000;";
       blogLink.appendChild(blogDescription);
-
+      
       // Categories (Tags)
       const categoriesDiv = document.createElement("div");
-      categoriesDiv.style = "display: flex; gap: 8px; margin-top: 12px;";
 
       for (const category of items[i].tags) {
           const badge = document.createElement("span");
           badge.className = "badge";
           badge.innerHTML = category;
-          badge.style = `
-              font-size: 12px;
-              padding: 4px 8px;
-              background-color: #007acc;
-              color: white;
-              border-radius: 4px;
-          `;
           categoriesDiv.appendChild(badge);
       }
       blogLink.appendChild(categoriesDiv);
