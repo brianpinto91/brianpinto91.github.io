@@ -203,7 +203,8 @@ function populateLinks(items, id) {
       div.className = "copyright-text no-print";
       item.data.forEach(function (copyright) {
         let p = document.createElement("p");
-        p.innerHTML = copyright;
+        let currentYear = new Date().getFullYear();
+        p.innerHTML = [`&copy; ${currentYear} Brian Pinto. All rights reserved.`];;
         div.append(p);
       });
       footer.append(div);

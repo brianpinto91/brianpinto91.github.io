@@ -171,6 +171,6 @@ export const footer = [
   },
   {
     label: "copyright-text",
-    data: ["Made with &hearts; by Brian Pinto"],
+    data: ["&copy; {{year}} My Company. All rights reserved."],
   },
 ];
