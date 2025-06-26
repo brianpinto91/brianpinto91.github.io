@@ -4,7 +4,7 @@ export const bio = [
 "techniques, predictive modeling, and deep learning to solve complex, real-world problems across " +
 "domains including retail, air traffic management, and financial valuation. " +
 "Proficient in Python, SQL, data visualization, and machine learning tools, with a strong foundation in " +
-"translating business problems into data-driven solutions. Passionate about leveraging data to" +
+"translating business problems into data-driven solutions. Passionate about leveraging data to " +
 "optimize operations, enhance strategic planning, and unlock business value in analytics-driven roles.",
 ];
   
@@ -16,8 +16,17 @@ export const skills = [
 
 export const projects = [
   {
+      link: "https://github.com/brianpinto91/customer-delinquency-credit-card",
+      title: "Credit Card Delinquency Detection",
+      content: "This is a credit-risk modeling project that aims to predict worsening delinquencies on credit-card accounts using ML. " +
+              "This is useful for risk management teams to identify accounts heading toward charge-off. The dataset has 2 million records of unique clients, of which only 10% " +
+              "are delinquent. A model with high recall score is desired so that we identify most of the delinquent customers to reduce the risk and potential loss to the credit lending agency. "+
+              "At the same time a good precision score is also desidered so that cost of false flags are minimized which directly impacts the revenue from potential customers.",
+      tags: ["Python", "Data Analysis", "Classification Modelling", "Random Forest", "Cat Boost"],
+  },
+  {
       link: "https://github.com/brianpinto91/private-library-assistant",
-      title: " Private Book QA Agent (RAG-based LLM)",
+      title: "Private Book QA Agent (RAG-based LLM)",
       content: "This project builds an AI-powered question-answering system that enables users to query a large collection of private documents and books and receive contextually relevant answers." +
               " It Uses Retrieval-Augmented Generation (RAG) to fetch releavant content from stored documents before generating a response.",
       tags: ["Python", "GEN-AI", "LLM", "RAG"],
